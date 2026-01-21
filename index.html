@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Executors</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial,Helvetica,sans-serif;
+    background:linear-gradient(180deg,#020617,#020617);
+    color:#fff;
+}
+
+.container{
+    padding:16px;
+}
+
+.card{
+    background:linear-gradient(180deg,#0b122e,#050b1d);
+    border-radius:18px;
+    padding:16px;
+    margin-bottom:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.4);
+}
+
+.header{
+    display:flex;
+    gap:12px;
+    align-items:center;
+}
+
+.header img{
+    width:52px;
+    height:52px;
+    border-radius:12px;
+    object-fit:cover;
+}
+
+.title{
+    font-size:20px;
+    font-weight:700;
+}
+
+.stars{
+    color:#facc15;
+    font-size:14px;
+}
+
+.info{
+    margin-top:14px;
+    font-size:14px;
+}
+
+.row{
+    display:flex;
+    justify-content:space-between;
+    padding:6px 0;
+    border-bottom:1px solid rgba(255,255,255,.05);
+}
+
+.online{color:#22c55e;}
+.offline{color:#ef4444;}
+
+.btn{
+    margin-top:14px;
+    padding:14px;
+    border-radius:14px;
+    text-align:center;
+    font-weight:700;
+    cursor:pointer;
+    user-select:none;
+}
+
+/* DOWNLOAD */
+.btn.download{
+    background:#34d399;
+    color:#022c22;
+}
+
+/* DISCORD */
+.btn.discord{
+    background:#5865f2;
+}
+
+/* ===== VNG ARCEUS X STYLE ===== */
+.btn.vng{
+    position:relative;
+    background:#b91c1c;
+    overflow:hidden;
+}
+
+.btn.vng::before{
+    content:"";
+    position:absolute;
+    width:140%;
+    height:60%;
+    background:#facc15;
+    transform:rotate(-20deg);
+    top:20%;
+    left:-20%;
+}
+
+.btn.vng::after{
+    content:"★";
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    font-size:26px;
+    color:#facc15;
+}
+
+.btn span{
+    position:relative;
+    z-index:2;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<!-- KRNL -->
+<div class="card">
+    <div class="header">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiVjdgmX2T4VKz31UgdlmT6PBZmo7aGG9C5KiuxKk8cuyEhF4m86YZLq1gQCuBDjgM1F1LGgqYpjqqsxX4dNq4SKnkT5TE7f7q96EF-AS4sT_j9uNdYyglIPVkJPtVDX7PkEXmExA4RnudLMgNR0W5-4dGBsRMdtz2XbXbUBV2hmvb1GSuYVRlmwZcz9BE/s150/1000026280.jpg">
+        <div>
+            <div class="title">KRNL</div>
+            <div class="stars">★★★★★ 5.0</div>
+        </div>
+    </div>
+
+    <div class="info">
+        <div class="row"><span>Version:</span><span>2.697.926</span></div>
+        <div class="row"><span>VNG Version:</span><span>2.696.799</span></div>
+        <div class="row"><span>Status:</span><span class="offline">● Offline</span></div>
+        <div class="row"><span>VNG Status:</span><span class="offline">● Offline</span></div>
+        <div class="row"><span>Downloads:</span><span>2M+</span></div>
+    </div>
+
+    <div class="btn download" onclick="location.href='https://krnl.filenetwork.vip/file/krnl_vng_release_2.696.799_2025.11.1_31.apk'">
+        ↓ Download
+    </div>
+
+    <div class="btn vng" onclick="location.href='https://krnl.filenetwork.vip/file/krnl_vng_release_2.696.799_2025.11.1_31.apk'">
+        <span>↓ VNG</span>
+    </div>
+
+    <div class="btn discord" onclick="location.href='https://discord.gg/r7ShD7Z4A'">
+        💬 Discord
+    </div>
+</div>
+
+<!-- ArceusX -->
+<div class="card">
+    <div class="header">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjNU4udd9Jt0OSZLuxX54Jx5U-toTjaDzOSoOLTgZ2eXZtpxA4dkuwtuw-yjoNYLFDF0AJOEoAdOkNhlvV9TAY-gYHS9zVaNZmXVd_xiP3UwLt7LnLHJbqG4aTKiFkxjqz58iC37GnpATGt4ToyUziDOHD6M96jIGicg_NKVIXZM1bHXRt12DmkRRArHxY/s1000/1000026275.png">
+        <div>
+            <div class="title">Arceus X</div>
+            <div class="stars">★★★★★ 5.0</div>
+        </div>
+    </div>
+
+    <div class="info">
+        <div class="row"><span>Version:</span><span>2.703.1353</span></div>
+        <div class="row"><span>VNG Version:</span><span>2.703.1352</span></div>
+        <div class="row"><span>Status:</span><span class="online">● Online</span></div>
+        <div class="row"><span>VNG Status:</span><span class="online">● Online</span></div>
+        <div class="row"><span>Downloads:</span><span>2.5M+</span></div>
+    </div>
+
+    <div class="btn download" onclick="location.href='https://link4m.com/GkgRA24a'">
+        ↓ Download
+    </div>
+
+    <div class="btn vng" onclick="location.href='https://link4m.com/WpiuRKH'">
+        <span>↓ VNG</span>
+    </div>
+
+    <div class="btn discord" onclick="location.href='https://discord.gg/r7ShD7Z4A'">
+        💬 Discord
+    </div>
+</div>
+
+<!-- CodeX -->
+<div class="card">
+    <div class="header">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiik3ufmAms-pXS9f-2ofiVZilr8sUy1RuytDh7Bj41LFIS6nWppKJaTlNzoeC4tTlOPa3iF7Rd5AXFz6U_55RLS2ZbEYrZqd3d39vQB9JHRU-uia-9oQEwRT_FlebYhjzK1C8XoxCEyuhm3tiJSNbVmlModJMrRWK26pZDkPLY7SbZGAVTGHWqCnCYjig/s365/1000026282.png">
+        <div>
+            <div class="title">CodeX</div>
+            <div class="stars">★★★★★ 4.2</div>
+        </div>
+    </div>
+
+    <div class="info">
+        <div class="row"><span>Version:</span><span>2.703.1353</span></div>
+        <div class="row"><span>VNG Version:</span><span>2.689.880</span></div>
+        <div class="row"><span>Status:</span><span class="online">● Onliine</span></div>
+        <div class="row"><span>VNG Status:</span><span class="offline">● Offline</span></div>
+        <div class="row"><span>Downloads:</span><span>950K+</span></div>
+    </div>
+
+    <div class="btn download" onclick="location.href='https://link4m.com/jl0TJX'">
+        ↓ Download
+    </div>
+
+    <div class="btn vng" onclick="location.href='https://link4m.com/ygcfr5vX'">
+        <span>↓ VNG</span>
+    </div>
+
+    <div class="btn discord" onclick="location.href='https://discord.gg/r7ShD7Z4A'">
+        💬 Discord
+    </div>
+</div>
+
+<!-- DeltaX -->
+<div class="card">
+    <div class="header">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhHYdWiV7pho1zzmj8IIybMvMQXlkRoJ6DDKDM6GEsH_Poe-ft6OZVcEeU51QS3z-9NOXEgzJdtMGnZx4tqfbVikDhM2rmDP7XZWIxev0z9NW3PCj9VUnD6i3CXvCyxxBpOP9tKxQb4fC592vxmGpJzgmD7ceya9R9zIXbpr06gYh94SiO4EU-HfW0TDLs/s256/1000026286.png">
+        <div>
+            <div class="title">DeltaX</div>
+            <div class="stars">★★★★★ 4.5</div>
+        </div>
+    </div>
+
+    <div class="info">
+        <div class="row"><span>Version:</span><span>2.703.1353</span></div>
+        <div class="row"><span>VNG Version:</span><span>2.703.1352</span></div>
+        <div class="row"><span>Status:</span><span class="online">● Onliine</span></div>
+        <div class="row"><span>VNG Status:</span><span class="online">● Online</span></div>
+        <div class="row"><span>Downloads:</span><span>1.5M+</span></div>
+    </div>
+
+    <div class="btn download" onclick="location.href='https://link4m.com/Y3VsV'">
+        ↓ Download
+    </div>
+
+    <div class="btn vng" onclick="location.href='https://link4m.com/XA2fdh'">
+        <span>↓ VNG</span>
+    </div>
+
+    <div class="btn discord" onclick="location.href='https://discord.gg/r7ShD7Z4A'">
+        💬 Discord
+    </div>
+</div>
+
+<!-- Fluxus Z -->
+<div class="card">
+    <div class="header">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgwJosGn1A2z-RebaML-FddomUJVJknwsla97AdFLwguRL1LNfcZiev7iCAJD69OBplfQeTdtu9IRBZzb90T6JarsLZB3sthnDNV9q-08n-kcFl5bEIfUQdW2_ZEoW5GtQyhKu7-x3ftAIEynVb3OcXPEJzRvmziF_TfL7efVevkYd4Sly6jmGf3chUK0g/s256/1000026290.webp">
+        <div>
+            <div class="title">Fluxus Z</div>
+            <div class="stars">★★★★★ 4.0</div>
+        </div>
+    </div>
+
+    <div class="info">
+        <div class="row"><span>Version:</span><span>2.704.1060</span></div>
+        <div class="row"><span>VNG Version:</span><span>2.703.1352</span></div>
+        <div class="row"><span>Status:</span><span class="online">● Onliine</span></div>
+        <div class="row"><span>VNG Status:</span><span class="online">● Online</span></div>
+        <div class="row"><span>Downloads:</span><span>7.4K+</span></div>
+    </div>
+
+    <div class="btn download" onclick="location.href='https://link4m.com/OfGvD'">
+        ↓ Download
+    </div>
+
+    <div class="btn download" onclick="location.href='https://link4m.com/xeSsS1'">
+        ↓ 32-Bit
+    </div>
+
+    <div class="btn vng" onclick="location.href='https://link4m.com/4vbiIk'">
+        <span>↓ VNG</span>
+    </div>
+
+    <div class="btn vng" onclick="location.href='https://link4m.com/YIVxjI'">
+        <span>↓ 32-Bit</span>
+    </div>
+
+    <div class="btn discord" onclick="location.href='https://discord.gg/r7ShD7Z4A'">
+        💬 Discord
+    </div>
+</div>
+
+<!-- Frostware -->
+<div class="card">
+    <div class="header">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgwRVZS_bbgtrA_x1MUbu3L_N4q37KOpUxiD82jmDOBRCm0pzyVts6ApFSnVS3WyXviDD0be5d0bhQouKkmCzgu-hh9VAILtdcgzge_nQXx6vQ7rcH5pFVPAv2vQIbsayFQe6_8PXC8dvpLtzh3WhvodTeUlcLDsaEAyqLjg5wBUPrKd4qsjpz04CZI7rs/s500/1000026291.png">
+        <div>
+            <div class="title">Frostware</div>
+            <div class="stars">★★★★★ 4.1</div>
+        </div>
+    </div>
+
+    <div class="info">
+        <div class="row"><span>Version:</span><span>2.703.1353</span></div>
+        <div class="row"><span>VNG Version:</span><span>2.702.622</span></div>
+        <div class="row"><span>Status:</span><span class="online">● Onliine</span></div>
+        <div class="row"><span>VNG Status:</span><span class="online">● Online</span></div>
+        <div class="row"><span>Downloads:</span><span>750K+</span></div>
+    </div>
+
+    <div class="btn download" onclick="location.href='https://link4m.com/gMVLx7qQ'">
+        ↓ Download
+    </div>
+
+    <div class="btn vng" onclick="location.href='https://link4m.com/IS74fAMH'">
+        <span>↓ VNG</span>
+    </div>
+
+    <div class="btn discord" onclick="location.href='https://discord.gg/r7ShD7Z4A'">
+        💬 Discord
+    </div>
+</div>
+
+</div>
+</body>
+</html>
